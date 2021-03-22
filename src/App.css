@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600');
+
+:root {
+  --body-bg-color: #FFFFFF;
+  --sidebar-bg-color: #E9E9E9;
+  --text-color: #333333;
+  --title-color: #111111;
+
+  --body-font: "Poppins",
+  "Sans-serif";
+  --h1-font-size: 1.7rem;
+  --h2-font-size: 1.3rem;
+  --h3-font-size: 1.1rem;
+  --h4-font-size: 1rem;
+
+  --spacing-1: .4rem;
+  --spacing-2: .8rem;
+  --spacing-3: 1.2rem;
+  --spacing-4: 1.5rem;
+  --spacing-5: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: var(--body-font);  
+  font-weight: 200;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1, h2, h3, h4 {
+  margin-bottom: var(--spacing-1);
+  font-weight: 400;
+  text-transform: uppercase;  
+  color: var(--title-color);
+}
+
+h1 {
+  font-size:var(--h1-font-size);
+}
+h2 {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: var(--spacing-4);
+  font-size: var(--h2-font-size);
+  letter-spacing: 5px;
+}
+/* bonus 
+h2::after {
+  content:"";
+  width:100%;
+  height:1px;
+  margin-left:10px;
+  background:var(--title-color);
+}
+*/
+h3 {
+  font-size: var(--h3-font-size);
+}
+h4 {
+  font-size: var(--h4-font-size);
+}
+@media screen and (min-width:768px) {
+  .grid {
+    display: grid;  
+    grid-template-columns: 1fr 3fr;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  margin-bottom:var(--spacing-2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar {
+  padding:1rem;
+  background-color: var(--sidebar-bg-color);
+  min-height: 100vh;
+}
+
+.main {
+  padding:1rem;
+  
+}
+
+.circle {
+  display: inline-block;
+  width:20px;
+  height: 20px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background:#AAA;
+}
+.circle--plain {  
+  background: #555;
 }
