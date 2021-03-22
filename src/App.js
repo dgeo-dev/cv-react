@@ -10,7 +10,11 @@ function App() {
           <User />
           <Skills />
         </div>
-        <div className="main">droit</div>
+        <div className="main">
+          <h2>Profil</h2>
+          <h2>Formations</h2>
+          <h2>Expériences profesionnelles</h2>
+        </div>
       </div>
       {/* react, react router, material ui, react-pdf */}
       {/* Installation, Nettoyage & paramétrage*/}
