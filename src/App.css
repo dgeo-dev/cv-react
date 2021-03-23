@@ -10,11 +10,11 @@
 
   /* colors */
   --body-bg-color: #FFFFFF;
-  --sidebar-bg-color: #f0ce85;
+  --sidebar-bg-color: #f4f4f4;
   --text-color: #333333;
   --title-color: #111111;
-  --dark-mod-body-bg-color: #0c0c0c;
-  --dark-mod-sidebar-bg-color: #000000;
+  --dark-mod-body-bg-color: #242424;
+  --dark-mod-sidebar-bg-color: #171717;
   --dark-mod-text-color: #d8d8d8;
   --dark-mod-title-color: #ffffff;
 
@@ -119,7 +119,8 @@ button {
 
 /* Grids */
 .grid__row {
-  margin: var(--spacing-2) 0;
+  margin: var(--spacing-3) 0;
+  
 }
 @media screen and (min-width:768px) {
   .grid__container {

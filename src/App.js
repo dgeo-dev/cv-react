@@ -2,7 +2,7 @@ import "./App.css"
 import User from "./components/User"
 import Skills from "./components/Skills"
 import Profil from "./components/Profil"
-import Experiences from "./components/Experiences"
+import Cursus from "./components/Cursus"
 import DarkMode from "./components/DarkMode"
 import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf"
 
@@ -13,7 +13,7 @@ function App() {
         <div className="sidebar">
           <div className="actions">
             <DarkMode />
-            <a href="./files/sample.pdf" target="_blank">
+            <a href="./files/cv-john-doe.pdf" target="_blank">
               <PictureAsPdfIcon />
             </a>
           </div>
@@ -22,7 +22,7 @@ function App() {
         </div>
         <div className="main">
           <Profil />
-          <Experiences />
+          <Cursus />
         </div>
       </div>
       {/* react, react router, material ui, react-pdf */}

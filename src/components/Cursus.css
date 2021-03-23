@@ -1,7 +1,5 @@
-.grid__item {
-  margin-bottom: var(--spacing-1)
-}
-.grid__item p {
+.grid__item,
+.grid__item p {    
   margin-bottom: var(--spacing-1)
 }
 .grid__date {  
@@ -9,6 +7,9 @@
 }
 .grid__title {
   margin-bottom: 0;
+}
+.grid__location {
+  font-weight: 300;
 }
 .grid__mission {
   margin-bottom:var(--spacing-1);

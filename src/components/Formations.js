@@ -1,6 +1,6 @@
 import React from "react"
 
-function Experiences(props) {
+function Formations(props) {
   const datas = props.datas
 
   return (
@@ -13,14 +13,6 @@ function Experiences(props) {
           <div className="grid__item">
             <h3 className="grid__title">{item.title}</h3>
             <p className="grid__location">{item.location}</p>
-            <p className="grid__text">{item.text}</p>
-            <ul className="grid__missions">
-              {item.missions.map(mission => (
-                <li className="grid__mission" key={mission.id}>
-                  {mission.title}
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
       ))}
@@ -28,4 +20,4 @@ function Experiences(props) {
   )
 }
 
-export default Experiences
+export default Formations

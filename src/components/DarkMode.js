@@ -1,12 +1,10 @@
 import React from "react"
 import { useState } from "react"
-import Brightness4Icon from "@material-ui/icons/Brightness4"
-import Brightness3Icon from "@material-ui/icons/Brightness3"
 import WbSunnyOutlinedIcon from "@material-ui/icons/WbSunnyOutlined"
 import Brightness2OutlinedIcon from "@material-ui/icons/Brightness2Outlined"
 
 const DarkMode = () => {
-  const [themeMode, setThemeMode] = useState(false)
+  const [themeMode, setThemeMode] = useState("light")
   let clickedClass = "clicked"
   const body = document.body
   const lightTheme = "light"
@@ -37,7 +35,6 @@ const DarkMode = () => {
     }
     setThemeMode(theme)
   }
-  console.log(themeMode)
 
   return (
     <button
