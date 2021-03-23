@@ -1,19 +1,28 @@
 import "./App.css"
 import User from "./components/User"
 import Skills from "./components/Skills"
+import Profil from "./components/Profil"
+import Experiences from "./components/Experiences"
+import DarkMode from "./components/DarkMode"
+import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf"
 
 function App() {
   return (
-    <div className="App">
-      <div className="grid">
+    <div className="App light-mode">
+      <div className="grid__container">
         <div className="sidebar">
+          <div className="actions">
+            <DarkMode />
+            <a href="./files/sample.pdf" target="_blank">
+              <PictureAsPdfIcon />
+            </a>
+          </div>
           <User />
           <Skills />
         </div>
         <div className="main">
-          <h2>Profil</h2>
-          <h2>Formations</h2>
-          <h2>Expériences profesionnelles</h2>
+          <Profil />
+          <Experiences />
         </div>
       </div>
       {/* react, react router, material ui, react-pdf */}
