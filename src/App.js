@@ -1,6 +1,5 @@
 import "./App.css"
 import React from "react"
-
 import User from "./components/User"
 import Skills from "./components/Skills"
 import Profil from "./components/Profil"
@@ -20,8 +19,7 @@ function App() {
       print("cv", "cv-print")
       cvTemplate.setAttribute("style", "width:100% !important")
       cvTemplate.classList.remove("cv-print")
-    }, 1000)
-    // print("cv", "cv-print")
+    }, 300)
   }
   return (
     <Preview id={"cv-print"} class="cv-print">
@@ -49,10 +47,10 @@ function App() {
 
         {/* Colonne de gauche * /} 
 
-      {/* Détails personnels - infos */}
+      {/* Détails personnels - User */}
         {/* Compétences - skills */}
         {/* Langues - languages */}
-        {/* Centres d'intérêts - interets */}
+        {/* Centres d'intérêts - interests */}
 
         {/* Colonne de droite * /} 
 
@@ -61,9 +59,8 @@ function App() {
         {/* Formation  - education */}
         {/* Expériences professionelles - experiences */}
 
-        {/* Media queries */}
         {/* Ligth & Dark mode */}
-        {/* Export PDF (react-pdf) */}
+        {/* Export PDF (react-html2pdf) */}
       </div>
     </Preview>
   )
