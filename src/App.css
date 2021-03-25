@@ -13,15 +13,18 @@
   --sidebar-bg-color: #f4f4f4;
   --text-color: #333333;
   --title-color: #111111;
-  --dark-mod-body-bg-color: #242424;
-  --dark-mod-sidebar-bg-color: #171717;
-  --dark-mod-text-color: #d8d8d8;
-  --dark-mod-title-color: #ffffff;
+  --date-color: #1f94c2;
+  --dark-body-bg-color: #242424;
+  --dark-sidebar-bg-color: #171717;
+  --dark-text-color: #d8d8d8;
+  --dark-title-color: #ffffff;
+  --dark-date-color: #e6ef71;
+  
 
   --circle-color: #AAA;
   --circle-color-plain: #555;  
-  --dark-mod-circle-color: rgb(108, 108, 108);
-  --dark-mod-circle-color-plain: rgb(238, 238, 238);
+  --dark-circle-color: rgb(108, 108, 108);
+  --dark-circle-color-plain: rgb(238, 238, 238);
 
   /* Fonts */
   --body-font: "Poppins", "Sans-serif";
@@ -45,8 +48,8 @@ body {
   color: var(--text-color);  
 }
 .dark {  
-  background-color: var(--dark-mod-body-bg-color);
-  color: var(--dark-mod-text-color);
+  background-color: var(--dark-body-bg-color);
+  color: var(--dark-text-color);
 }
 
 h1, h2, h3 {
@@ -56,7 +59,7 @@ h1, h2, h3 {
 }
 
 .dark h1, .dark h2, .dark h3 {
-  color: var(--dark-mod-title-color);
+  color: var(--dark-title-color);
 }
 
 h1 {
@@ -98,7 +101,7 @@ a {
 }
 
 .dark a {
-  color: var(--dark-mode-text-color);
+  color: var(--dark-text-color);
 }
 
 button {
@@ -109,10 +112,13 @@ button {
 }
 
 .dark button {
-  color: var(--dark-mod-text-color);
+  color: var(--dark-text-color);
 }
 
 /* Helpers */
+.mb3 {
+  margin-bottom: var(--spacing-3);
+}
 .mb5 {
   margin-bottom: var(--spacing-5);
 }
@@ -146,7 +152,7 @@ button {
 }
 
 .dark .sidebar {
- background-color: var(--dark-mod-sidebar-bg-color);
+ background-color: var(--dark-sidebar-bg-color);
 }
 .main {
   padding:1.5rem;  
@@ -165,9 +171,46 @@ button {
 }
 
 .dark .circle {
-  background: var(--dark-mod-circle-color);
+  background: var(--dark-circle-color);
 }
 .dark .circle--plain {
-  background: var(--dark-mod-circle-color-plain);
+  background: var(--dark-circle-color-plain);
+}
+
+/* Generate PDF */
+
+#cv-print {
+  width: 100% !important;
+} 
+.cv-print ul {
+  margin:0;
+  padding:0;
+  
+}
+.cv-print ul li {
+  list-style-type:none;
+}
+.cv-print ul li:before {
+  content: "•";
+  display: inline-block; 
+  font-size: 110%;
+  padding-right: 10px;
+}
+.cv-print .grid__container {
+  font-size:12px !important;
+  max-width: 210mm;
+}
+.cv-print .sidebar {
+  height: 297mm;
+}
+.cv-print .user__infos svg {
+  display: none !important;
+}
+.cv-print .circle {
+  width:10px;
+  height:10px;
+}
+.cv-print .grid__date {
+  margin-top:5px;
 }
 

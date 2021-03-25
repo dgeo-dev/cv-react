@@ -4,7 +4,8 @@ function Formations(props) {
   const datas = props.datas
 
   return (
-    <>
+    <div className="cursus mb3">
+      <h2>Formations</h2>
       {datas.map(item => (
         <div className="grid__row" key={item.id}>
           <div className="grid__item">
@@ -16,7 +17,7 @@ function Formations(props) {
           </div>
         </div>
       ))}
-    </>
+    </div>
   )
 }
 

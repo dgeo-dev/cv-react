@@ -28,9 +28,9 @@ function Skills() {
         <h2 className="h2">Centres d'intérêts</h2>
         <ul>
           <li>Informatique</li>
-          <li>Informatique</li>
-          <li>Informatique</li>
-          <li>Informatique</li>
+          <li>Musique</li>
+          <li>Tennis</li>
+          <li>Randonnée</li>
         </ul>
         <div className="interests">
           <SportsTennisIcon style={{ fontSize: 40 }} />
