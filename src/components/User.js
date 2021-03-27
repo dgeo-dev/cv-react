@@ -17,10 +17,10 @@ function User() {
           <HomeIcon /> 22 rue du codeur 75001 Paris
         </p>
         <p className="user__info">
-          <PhoneIcon /> 0606060606
+          <PhoneIcon /> <a href="tel:+33606060606">0606060606</a>
         </p>
         <p className="user__info">
-          <MailIcon /> johndoe@gmail.com
+          <MailIcon /> <a href="mailto:johndoe@gmail.com">johndoe@gmail.com</a>
         </p>
         <p className="user__info">
           <EventIcon /> Date de naissance: 22 Mai 2000

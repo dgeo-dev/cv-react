@@ -1,4 +1,5 @@
 .user {
+  /* position: relative; */
   text-align: center;  
 }
 .user__avatar {  
@@ -9,9 +10,12 @@
   padding:var(--spacing-3) 0 var(--spacing-1) 0;
 }
 .user__info {
-  display: flex;  
-  
+  display: flex;    
 }
 .user__info svg {
+  color:var(--icon-color);
   margin-right:1rem;
+}
+.dark .user__info svg {
+  color:var(--dark-icon-color);
 }

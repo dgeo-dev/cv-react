@@ -41,15 +41,15 @@ function App() {
           </div>
         </div>
 
-        {/* react, react router, material ui, react-pdf */}
-        {/* Installation, Nettoyage & paramétrage*/}
+        {/* react, material ui, react-html2pdf */}
+        {/* Installation, Nettoyage & paramétrage */}
         {/* Variables CSS */}
 
         {/* Colonne de gauche * /} 
 
       {/* Détails personnels - User */}
         {/* Compétences - skills */}
-        {/* Langues - languages */}
+        {/* Langues - skills */}
         {/* Centres d'intérêts - interests */}
 
         {/* Colonne de droite * /} 
