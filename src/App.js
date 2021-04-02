@@ -1,5 +1,4 @@
 import "./App.css"
-import React from "react"
 import User from "./components/User"
 import Skills from "./components/Skills"
 import Profil from "./components/Profil"
@@ -14,7 +13,6 @@ function App() {
     cvTemplate.setAttribute("style", "width:210mm !important")
     cvTemplate.classList.add("cv-print")
     document.body.classList.remove("dark")
-    console.log(cvTemplate.style.width)
     setTimeout(() => {
       print("cv", "cv-print")
       cvTemplate.setAttribute("style", "width:100% !important")
@@ -23,7 +21,7 @@ function App() {
   }
   return (
     <Preview id={"cv-print"} class="cv-print">
-      <div className="App light-mode">
+      <div className="App">
         <div className="grid__container">
           <div className="sidebar">
             <div className="actions">
@@ -40,25 +38,20 @@ function App() {
             <Cursus />
           </div>
         </div>
-
         {/* react, material ui, react-html2pdf */}
         {/* Installation, Nettoyage & paramétrage */}
         {/* Variables CSS */}
-
         {/* Colonne de gauche * /} 
 
       {/* Détails personnels - User */}
         {/* Compétences - skills */}
         {/* Langues - skills */}
         {/* Centres d'intérêts - interests */}
-
         {/* Colonne de droite * /} 
 
       {/* Profil - profil */}
-
         {/* Formation  - education */}
         {/* Expériences professionelles - experiences */}
-
         {/* Ligth & Dark mode */}
         {/* Export PDF (react-html2pdf) */}
       </div>

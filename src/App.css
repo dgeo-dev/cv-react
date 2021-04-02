@@ -170,7 +170,7 @@ button {
   background-color: #bae5ff;
   clip-path: polygon(0 0, 100% 1%, 100% 100%, 75% 86%, 25% 86%, 0 100%);
 }
- */
+ */  
 .dark .sidebar {
   background-color: var(--dark-sidebar-bg-color);
 }
